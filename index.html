@@ -8,15 +8,34 @@
         <meta name="viewport" content="width=device, initial-scale=1.0">
     </head>
     <body>
-        <h1>This is my <span>frontend cheat sheet!</span></h1>
+        <ol>
+            <li><a href="#glavni_naslov">This is my frontend cheat sheet!</a></li> 
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#struktura">Basic HTML structure</a></li>
+            <li><a href="#elementi">Inline text elements</a></li>
+            <li><a href="#vjezbanje">Vježbe</a></li>
+            <li><a href="#prebacivanje">Kako prebaciti promjene napravljene u dokumentu u Visual Studio Codeu u repozitorij?</a></li>
+            <li><a href="#linkovi">Korisni linkovi</a></li>
+            <li><a href="#svg">SVG</a></li>
+            <li><a href="#vjezbanje2">Vježbe  GIF i SVG</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+        </ol>
+        <h1 id="glavni_naslov">This is my <span>frontend cheat sheet!</span></h1>
+        <p>Visit my <a href="https://github.com/Diiiiiii" target="_blank">GitHub profile</a></p>
+        <p>Get in touch, <a href="mailto:example@email,com">send a message</a></p>
+        <p><a href="./about.html">To About</a></p>
+        <ol>
+            <li><a href="#video">Video</a></li>
+        </ol>
         <p>Novi sadržaj.</p>
-        <h1>HTML</h1>
-<img src="./images/html.svg" alt="Html" height="50p">
+        <h1 id="html">HTML</h1>
+<a href="https://validator.w3.org/" target="_blank"><img src="./images/html.svg" alt="Html" height="50p"></a>
 <img src="./images/css.jpeg" alt="css" height="50p">
 <img src="./images/js-logo.png" alt="js" height="50p"><br>
 <img src="https://www.slikarskipribor.hr/fotky6358/fotos/DLR196500755.jpg" alt="Slikarski pribor" height="90p" width="100p">
 
-        <h2>Basic HTML structure</h2>
+        <h2 id="struktura">Basic HTML structure</h2>
         <pre>
             &lt;!doctype html&gt;
             &amp;lt;
@@ -24,7 +43,7 @@
               head
               body
         </pre>
-        <h2>Inline text elements</h2>
+        <h2 id ="elementi">Inline text elements</h2>
         <p><strong>This is important.</strong> This is not, <em>but it can be useful.</em></p>
         <ul>
             <li>strong - this is important</li>
@@ -45,7 +64,7 @@
             <dd>Used for footer text.</dd>
         </dl>
 
-        <h3>Vježbanje</h3>
+        <h3 id ="vjezbanje">Vježbanje</h3>
         <ul>
             <li>They are grouped by function to help you find what you have in mind easily.</li>
             <li>An alphabetical list of all elements is provided in the sidebar on every element's page as well as this one.</li>
@@ -65,27 +84,38 @@
             <dt>Metadata</dt>
             <dd>data that describes data</dd>
         </dl>
-        <h2>Kako prebaciti promjene napravljene u dokumentu u Visual Studio Codeu u repozitorij?</h2>
+        <h2 id ="prebacivanje">Kako prebaciti promjene napravljene u dokumentu u Visual Studio Codeu u repozitorij?</h2>
         <ol>
             <li>Commitanje tj. izvršiti izmjene u dokumentu index.html - Source Control (Ctrl+Shift+G), Changes, index.html - pritisnuti + (Stage All Changes) </li>
             <li>U polje <em>Message</em> upisati natuknicu o napravljenoj promjeni i pritisnuti <em>Commit</em> (kvačica) i <em>Enter</em></li>
             <li>Kliknuti <em>Sync Changes</em> - promjene koje su napravljene se šalju u repozitorij</li>
         </ol>
-        <h2>Korisni linkovi</h2>
+        <h2 id ="linkovi">Korisni linkovi</h2>
         <ul>
             <li><a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference za HTML elemente i primjeri njihovog korištenja</a> </li>
             <li><a href="https://www.w3.org/TR/wai-aria-practices/">Semantika</a></li>
         </ul>
-        <h2>SVG</h2>
+        <h2 id ="svg">SVG</h2>
         <svg width="300" height="300" viewBox="0 0 300 300" fill="none xmlsn="http:/www.w3.org/2002/svg">
             <rect width="50%" height="50%" fill="red"></rect>
         </svg>
 
-        <h3>Vježbe  GIF i SVG</h3>
+        <h3 id= vjezbanje2>Vježbe  GIF i SVG</h3>
         <img src="./images/moja-animacija.gif" alt= Čekanje><br>
         <svg width="300" height="300" viewBox="0 0 300 300" fill="none xmlsn="http:/www.w3.org/2002/svg">
             <rect width="50%" height="50%" fill="red"></rect>
             <circle cx="75" cy="70" r="30" fill="blue"></circle>
         </svg>
+        <h2 id = "audio" >Audio</h2>
+        <audio controls>
+            <source src="./music.wav">
+            <p>Your browser does not support this format</p>
+        </audio>
+        <h2 id="video">Video</h2>
+        <video width="600" controls>
+            <source src="./mountains.webm">
+        </video>
+        <br><br>
+        <a href="#">Back to top of page</a>
     </body>
 </html>
