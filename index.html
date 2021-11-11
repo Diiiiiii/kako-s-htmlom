@@ -43,9 +43,9 @@
            </ol> 
            <li><a href="#lists">Lists</a></li>
            <ol type="a">
-               <li><a href="#orderd">Orderd list</a></li>
-               <li><a href="#unordered">Unorderd Lists</a></li>
-               <li><a href="#description">Description list</a></li>
+               <li><a href="#ordered">Ordered List</a></li>
+               <li><a href="#unordered">Unordered List</a></li>
+               <li><a href="#description">Description List</a></li>
            </ol>
            <li><a href="#media">Media</a></li>
            <ol type="a">
@@ -138,7 +138,7 @@
         <h2 id="lists">Lists</h2>
              <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:</p> 
 
-            <h3 id ="unordered">Unordered lists</h3>
+            <h3 id ="unordered">Unordered List</h3>
                 <p>Are for lists where the order of the items doesn't matter, such as a shopping list. These are wrapped in a <code>&lt;ul&gt;</code> element.</p>      
         <ul>
             <li>strong - this is important</li>
@@ -148,7 +148,7 @@
         <a href="#">Back to top of page</a>
     <br>
 
-    <h3 id="orderd">Orderd</h3>
+    <h3 id="ordered">Ordered List</h3>
     <p>Ordered lists are for lists where the order of the items does matter, such as a recipe. These are wrapped in an <code>&lt;ol&gt;</code> element.</p>
         <ol>
             <li>If the content is important and good to know, use strong</li>
@@ -157,7 +157,7 @@
         </ol>
         <a href="#">Back to top of page</a>
 <br>
-    <h3 id="description">Description list</h3>
+    <h3 id="description">Description List</h3>
     <p>The <code>&lt;dl&gt;</code> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <code>&lt;dt&gt;</code> element) and descriptions (provided by <code>&lt;dd&gt;</code> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</p>
         <dl>
             <dt>strong</dt>
@@ -262,15 +262,30 @@
         <a href="#">Back to top of page</a>
 
         <h2 id = "audio" >Audio</h2>
-        <audio controls>
+        <p>The <code>&lt;audio&gt;</code> element works just like the <code>&lt;video&gt;</code> element, with a few small differences as outlined below. A typical example might look like so:</p>
+        
+        <code>&lt;audio controls&gt;<br>
+            &lt;source src="./music.wav"&gt;<br>
+            &lt;p&gt;Your browser does not support this format&lt;/p&gt;
+        <br>&lt;/audio&gt;</code>
+            <br><br>
+            <audio controls>
             <source src="./music.wav">
             <p>Your browser does not support this format</p>
-        </audio><br>
+        </audio><br><br>
         <a href="#">Back to top of page</a>
         <h2 id="video">Video</h2>
+        <p>The <code>&lt;video&gt;</code> element allows you to embed a video very easily. A really simple example looks like this:</p>
+        <code>
+            &lt;video width="600" controls&gt;<br>
+                &ltsource src="./mountains.webm"&gt;<br>
+            &lt;/video&gt; <br>
+        </code>
+        <br>
+        <p>The embedded video will look something like this:</p>
         <video width="600" controls>
             <source src="./mountains.webm">
-        </video><br>
+        </video><br><br>
         <a href="#">Back to top of page</a>
         <h2 id="tabele">Tables</h2>
         <table border="1">
