@@ -95,7 +95,20 @@
         </pre>
 
         <h2 id ="druga">Text formatting</h2>
-        <p>HTML contains several elements for defining text with a special meaning.<br>
+        <p>HTML contains several elements for defining text with a special meaning:
+            <ul> 
+                
+                <li><strong>Bold, Important text</strong></li>
+                <li><i>Italic text</i></li>
+                <li><em>Emphasized text</em></li>
+                <li>Marked text</li> 
+                <li>Smaller text</li> 
+                <li>Deleted text</li>
+                <li>Inserted text</li> 
+                <li>Subscript text</li>
+                <li>Superscript text</li>
+            </ul>
+            <br>
         <pre>
             <b>This text is bold</b>       
         </pre>Riječ <strong>ovo</strong> je boldana.
@@ -144,6 +157,17 @@
             <li>em - this is useful</li>
             <li>small - this is not important, but nice to have</li>
         </ul>
+        <p>Example of code:</p>
+        <code>
+        <pre>
+        &lt;ul&gt;
+            &lt;li&gt;strong - this is important&lt;/li&gt;
+            &lt;li&gt;em - this is useful&lt;/li&gt;
+            &lt;li&gt;small - this is not important, but nice to have&lt;/li&gt;
+        &lt;/ul&gt;
+        </pre>
+        </code>
+        <br>
         <a href="#">Back to top of page</a>
     <br>
 
@@ -154,6 +178,18 @@
             <li>If the contetnt is good to know use em</li>
             <li>If the content is not important, but nice to have, use small</li>
         </ol>
+
+        <p>Example of code:</p>
+        <code>
+        <pre>
+        &lt;ol&gt;
+            &lt;li&gt;If the content is important and good to know, use strong&lt;/li&gt;
+            &lt;li&gt;If the contetnt is good to know use em&lt;/li&gt;
+            &lt;li&gt;If the content is not important, but nice to have, use small&lt;/li&gt;
+        &lt;/ol&gt;
+        </pre>
+        </code>
+        
         <a href="#">Back to top of page</a>
 <br>
     <h3 id="description">Description List</h3>
@@ -166,6 +202,20 @@
             <dt>small</dt>
             <dd>Used for footer text.</dd>
         </dl>
+
+        <p>Example of code:</p>
+        <code>
+            <pre>
+                &lt;dl&gt;
+                    &lt;dt&gt;strong&lt;/dt&gt;
+                        &lt;dd&gt;Used for important text.&lt;/dd&gt;
+                    &lt;dt&gt;em&lt;/dt&gt;
+                        &lt;dd&gt;Used for good to know text.&lt;/dd&gt;
+                    &lt;dt&gt;small&lt;/dt&gt;
+                        &lt;dd&gt;Used for footer text.&lt;/dd&gt;
+                &lt;/dl&gt;  
+            </pre>
+        </code>
         <a href="#">Back to top of page</a>
         <br>
         
@@ -175,22 +225,17 @@
             <li>An alphabetical list of all elements is provided in the sidebar on every element's page as well as this one.</li>
         </ul>
         <ol>
+            <pre>
             <li>&lt;!DOCTYPE html&gt;</li>
-            <li>&lt;html&gt;</li> 
-            <li>&lt;head&gt;</li>
+            <li>&lt;html&gt;&lt;/html&gt;</li> 
+            <li>&lt;head&gt;&lt;/head&gt;</li>
             <li>&lt;meta&gt;</li>
-            <li>&lt;title&gt;</li>
-            <li>&lt;/title&gt;</li>
-            <li>&lt;/head&gt;</li>
-            <li>&lt;body&gt;</li>
-            <li>&lt;h1&gt;</li>
-            <li>&lt;/h1&gt;</li>
-            <li>&lt;h2&gt;</li>
-            <li>&lt;/h2&gt;</li>
-            <li>&lt;p&gt;</li>
-            <li>&lt;/p&gt;</li>
-            <li>&lt;/body&gt;</li>
-            <li>&lt;/html&gt;</li>
+            <li>&lt;title&gt;&lt;/title&gt;</li>
+            <li>&lt;body&gt;&lt;/body&gt;</li>
+            <li>&lt;h1&gt;&lt;/h1&gt;</li> 
+            <li>&lt;h2&gt;&lt;/h2&gt;</li>
+            <li>&lt;p&gt;&lt;/p&gt;</li>
+            </pre>
         </ol>
         <dl>
             <dt>HTML</dt>
@@ -213,16 +258,20 @@
         <h2 id ="media">Media</h1>
             <p>We've looked at a lot of text so far in this course, but the web would be really boring only using text. Let's start looking at how to make the web come alive with more interesting content! This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire webpages.</p>
 
-            <h3 id ="images">Images</h3>
-            <p>Some elements have no content and are called empty elements. Take the <code>&lt;img&gt;</code> element that we already have in our HTML page:</p>
+        <h3 id ="images">Images</h3>
+        <p>In order to put a simple image on a webpage, we use the <code>&lt;img&gt;</code> element. This is an empty element (meaning that it has no text content or closing tag) that requires a minimum of one attribute to be useful - <code>&lt;src&gt;</code> (sometimes spoken as its full title, source). The <code>&lt;src&gt;</code> attribute contains a path pointing to the image you want to embed in the page, which can be a relative or absolute URL, in the same way as <code>&lt;href&gt;</code> attribute values in <code>&lt;a&gt;</code> elements.</p>
+        
 
-            <p>Example Image:</p>
+        <p>Example Image:</p>
             
-                <img src="https://www.kindpng.com/picc/m/9-93777_cartoon-books-on-bookshelf-hd-png-download.png" alt="Polica s knjigama" height="300" width="400">
+        <img src="https://www.kindpng.com/picc/m/9-93777_cartoon-books-on-bookshelf-hd-png-download.png" alt="Polica s knjigama" height="300" width="400">
 
-            <p>Example Image code:</p>
+        <p>Example Image code:</p>
+            <ul>
+                <li>absolute URL <code>&lt;img src="https://www.kindpng.com/picc/m/9-93777_cartoon-books-on-bookshelf-hd-png-download.png" alt="Polica s knjigama" height="300" width="400"&gt;</code></li>
+                <li>relative URL <code>&lt;img src="./images/html.svg" alt="Html" height="100"&gt;</code></li>
 
-                <code>&lt;img src="https://www.kindpng.com/picc/m/9-93777_cartoon-books-on-bookshelf-hd-png-download.png" alt="Polica s knjigama" height="300" width="400"&gt;</code>
+            </ul>
 
 
         <h3 id ="svg">SVG</h3>
@@ -230,17 +279,25 @@
         Scalable Vector Graphics (SVG) is a 2D vector image format based on an XML syntax.The W3C began work on SVG in the late 1990s, but SVG only became popular when Internet Explorer 9 came out with SVG support. All major browsers now support SVG.</p>
         <p>Based on an XML syntax, SVG can be styled with CSS and made interactive using JavaScript. HTML5 now allows direct embedding of SVG tags in an HTML document.</p>
         <p>As a vector image format, SVG graphics can scale infinitely, making them invaluable in responsive design, since you can create interface elements and graphics that scale to any screen size. SVG also provides a useful set of tools, such as clipping, masking, filters, and animations.</p>
-        
-        <svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg">
-            <rect width="50%" height="50%" fill="#87CEFA"></rect>
-        </svg>
-        <br>
         <p>Example of code:</p>
         <code>&lt;svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg"&gt;
             &lt;rect width="50%" height="50%" fill="#87CEFA"&gt;&lt;/rect&gt;
             &lt;/svg&gt;</code>
-        
+            <br><br>
+        <svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg">
+            <rect width="50%" height="50%" fill="#87CEFA"></rect>
+        </svg>
+      
         <h3>My Examples of SVG and GIF</h3>
+        <p>GIF (Graphics Interchange Format)
+            <ul>
+                <li>Good choice for simple images and animations. Prefer PNG for lossless and indexed still images, and consider WebP, AVIF or APNG for animation sequences.</li>
+                <li>GIF supports simple animation, in which following an initial full-size frame, a series of images reflecting the parts of the image that change with each frame are provided.</li>
+            </ul>
+            <br>
+            <p>Example of code:</p> 
+            <code>&lt;img src="./images/moja-animacija.gif" alt= Čekanje&gt;</code>
+        </p>
        
        <!-- <h3 id= vjezbanje2>Vježbe  GIF i SVG</h3> -->
         
