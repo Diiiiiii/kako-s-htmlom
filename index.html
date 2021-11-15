@@ -123,34 +123,45 @@
             </ul>
             <br>
             
-            This <code>&lt;strong&gt;text&lt;/strong&gtcir;</code> is bold.    
-        </pre>This <strong>text</strong> is bold.
+            <p>Examples with and without tags:</p>
+            <code>&lt;strong&gt;<strong>This text is bold.</strong>&lt;/strong&gt;</code><br><br>   
+            <strong>This text is bold.</strong>
     </p>
             <a href="#">Back to top of page</a>
 
             <h3 id ="treca">Headings</h3>
                 <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
-                Naslovi i podnaslovi se označavaju tagovima <strong><code>&lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt;, &lt;h6&gt;&lt;/h6&gt;</code></strong>.
-                </pre>
-                <p>Primjeri naslova i podnaslova:
-                <h1>&lt;h1&gt; = Glavni naslov</h1>
-                <h2>&lt;h2&gt; = Podnaslov glavnog naslova</h2>
-                <h3>&lt;h3&gt; = Podnaslov podnaslova glavnog naslova</h3> 
-                <h4>&lt;h4&gt; = Podnaslov podnaslovog podnaslova glavnog naslova</h4>
-                </p>   
-                
-                    <a href="#">Back to top of page</a>
+                HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.<br>
+                <code>&lt;h1&gt;</code>  defines the most important heading. <br>
+                <code>&lt;h6&gt;</code> defines the least important heading.
+
+                <p>Examples:
+            <pre>
+                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+                <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+                <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+                <code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>
+                <code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>
+            </pre>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            </p> <br>  
+            <a href="#">Back to top of page</a>
 
             <h3 id="cetvrta">Paragraphs and words</h3>
                 <p>In HTML, each paragraph has to be wrapped in <strong><code>&lt;p&gt;</code></strong> tags.</p>
-                    
-                    <pre>&lt;p&gt;Jedan paragraf u odgovarajućim tagovima.&lt;/p&gt; </pre></p>
+                <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+                <p>The HTML <br> element defines a line break.</p>
+                <p>Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+                    <p>This is<br>a paragraph<br>with line breaks.</p>
 
-                <p>Još jedan malo dulji paragraf u odgovarajućim tagovima koji se proteže kroz možda dva retka. U njemu ne vidimo tagove na web stanici već samo u html dokumentu.
-
+                    <pre>&lt;p&gt;This is a paragraph without line breaks.&lt;/p&gt; </pre></p>
                 </p>
-              
-                <p>Vezano uz uređenje riječi više u poglavlju <a href="#elementi">Inline text elements</a>. </p>
 
 
                     <a href="#">Back to top of page</a>
@@ -158,9 +169,16 @@
                     
           
       <h3 id ="elementi">Inline text elements</h2> 
+        <p>An inline element does not start on a new line. An inline element only takes up as much width as necessary.
+            
+            This is a <code>&lt;span&gt;</code> element inside a paragraph.</p>
        
             <p><strong>This is important.</strong> This is not, <em>but it can be useful.</em></p>
+
+            <p><code>&lt;strong&gt;</code>This is important.<code>&lt;/strong&gt;</code>. This is not, <code>&lt;em&gt;</code>but it can be useful.<code>&lt;/em&gt;</code></p>
+
         <h2 id="lists">Lists</h2>
+
              <p>A lot of the web's content is lists and HTML has special elements for these. Marking up lists always consists of at least 2 elements. The most common list types are ordered and unordered lists:</p> 
 
             <h3 id ="unordered">Unordered List</h3>
