@@ -301,6 +301,7 @@
         <ul>
             <li><a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Reference za HTML elemente i primjeri njihovog korištenja</a> </li>
             <li><a href="https://www.w3.org/TR/wai-aria-practices/">Semantika</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP response status codes</a></li>
         </ul>
 
         <h2 id ="media">Media</h1>
@@ -548,11 +549,33 @@
             <button type="">Go!</button>
         </form>
         <h3>Search form</h3>
-        <form action="https://www.ecosia.org/search" method="get"method="get" target="_blank">
+        <form action="https://www.ecosia.org/search" method="get" target="_blank">
             <lable for="q">Search</lable>
             <input id="q" type="text" name="q">
             <button type="">Go!</button>
         </form>
+
+        <!--Status kodovi-->
+         <ol>
+             <li>Information responses (100–199)</li>
+             <li>Successful responses (200–299)
+                 <ul>200 OK - success status response code indicates that the request has succeeded. A 200 response is cacheable by default.</ul>
+                 <ul>201 Created - success status response code indicates that the request has succeeded and has led to the creation of a resource. The new resource is effectively created before this response is sent back and the new resource is returned in the body of the message, its location being either the URL of the request, or the content of the Location header.
+                    The common use case of this status code is as the result of a POST request.</ul>
+             </li>
+             <li>Redirection messages (300–399)</li>
+             <li>Client error responses (400–499)
+                 <ul>404 Not Found- client error response code indicates that the server can't find the requested resource. Links that lead to a 404 page are often called broken or dead links and can be subject to link rot.</ul>
+                 <ul>401 Unauthorized (nismo prijavljeni)</ul>
+                 <ul>403 Forbidden (nemamo prava na rad)</ul>
+                 <ul>422 Unprocessable Entity - The client should not repeat this request without modification.<br>response status code indicates that the server understands the content type of the request entity, and the syntax of the request entity is correct, but it was unable to process the contained instructions.</ul>
+                 <ul>418 I'm a teapot :)</ul>
+             </li>
+             <li>Server error responses (500–599)
+                 <ul>503 Service Unavailable server error response code indicates that the server is not ready to handle the request.</ul>
+                 <ul>504 Gateway Timeout server error response code indicates that the server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request.</ul>
+             </li>
+         </ol>
         <p><a href="#">Back to top of page</a></p>
         <p>URL encoding</p>
     </body>
