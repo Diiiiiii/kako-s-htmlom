@@ -691,6 +691,10 @@
             <button type="submit">Sign me up</button>
         </form>
 
+        
+        
+        
+
         <!--Zadatak-->
         <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Input types</a></h3>
         <ul>
@@ -724,6 +728,24 @@
             <li>optgroup - izrada grupa opcija</li>
            </ol>
 
+           <h3> Atribut Optgroup <code>&lt;select&gt;</code></h3>
+
+           <form action="https://www.ecosia.org/search">
+           <p>Izaberi najnepoznatiju ti knjigu s popisa (i saznaj nešto o njoj):</p>
+               <select name="q" multiple size="4">
+                   <optgroup label="Knjige ruskih autora">
+                       <option value="zlocin_i_kazna">Zločin i kazna - Dostojevski</option>
+                       <option value="rat_i_mir">Rat i mir - Tolstoj</option>
+                       <option value="ocevi_i_djeca">Očevi i djeca - Turgenjev</option>
+                   </optgroup>
+                   <optgroup label="Knjige poljskih autora">
+                       <option value="ducani_cimetne_boje">Dućani cimetne boje - Bruno Schulz</option>
+                       <option value="kroz_pustinju_i_prasumu">Kroz pustinju i prašumu - Henryk Sienkiewicz</option>
+                       <option value="bizarne_propovijesti">Bizarne pripovijesti - Olga Tokarczuk</option>
+                   </optgroup>
+               </select><br><br>
+               <button type="submit">O toj stvarno ne znam ništa!</button>
+               </form>
            
         <!--Zadatak-->
 
