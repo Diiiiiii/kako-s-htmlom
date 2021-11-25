@@ -679,16 +679,21 @@
 
         <h3>Newsletter form</h3>
         <form action="">
-            <label for="email">Email</label>
+            
+            <fieldset>
+                <legend>Pick your newsletter topics:</legend>
+                <label><input type="checkbox" name="newsletter_topic" value="fronted" checked> Frontent </label>
+                <label><input type="checkbox" name="newsletter_topic" value="backend"> Backend<label>
+                <label><input type="checkbox" name="newsletter_topic" value="ux-ui-design"> UX/UI Design </label>
+                <label><input type="checkbox" name="newsletter_topic" value="marketing"> Marketing</label>
+        </fieldset>
+        <fieldset>
+                <legend>Email</legend>
+            <label for="email" placeholder="email"></label>
             <input id="email" type="email" name="email" required>
-
-            <p>Pick your newsletter topics:</p>
-            <label><input type="checkbox" name="newsletter_topic" value="fronted" checked> Frontent </label>
-            <label><input type="checkbox" name="newsletter_topic" value="backend"> Backend<label>
-            <label><input type="checkbox" name="newsletter_topic" value="ux-ui-design"> UX/UI Design </label>
-            <label><input type="checkbox" name="newsletter_topic" value="marketing"> Marketing</label>
-
-            <button type="submit">Sign me up</button>
+            <button type="submit">Sign me up</button>    
+        </fieldset>
+        
         </form>
         <h3>Food order form</h3>
         <form action="">
@@ -734,9 +739,6 @@
                 <option>Palenta</option>
             </datalist>
         </form>
-        
-        
-        
 
         <!--Zadatak-->
         <h3><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Input types</a></h3>
