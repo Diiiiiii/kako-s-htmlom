@@ -9,24 +9,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        html {
-            font-size: 16px;
-        }
-        #video {
-            color: #b00000;
-        }
-        body {
-            font-family: 'Outfit', sans-serif;
-            color:#460858;
-            background-color:#f3f3d1
-        }
-        a {
-            color: rgb(209, 15, 15);
-        }
-    </style>
+        <link href="prism.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="wrapper">
         <h1 id ="hyperlinks">Hyperlinks</h1>
             <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
             <p>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax:</p>
@@ -122,6 +109,7 @@
         <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
         
         <pre>
+            <code class="language-html">
             &lt;!doctype html&gt;
             &amp;lt; stands for the less-than sign: <code>&lt;</code>
             &amp;gt; stands for the greater-than sign: <code>&gt;</code>
@@ -141,7 +129,7 @@
                 &lt;/body&gt;
 
             &lt;/html&gt;
-              
+            </code>  
         </pre>
 
         <h2 id ="druga">Text formatting</h2>
@@ -917,5 +905,7 @@
         <p><a href="#">Back to top of page</a></p>
         <h2>URL encoding</h2>
         <p></p>
+        </div>
+        <script src="prism.js"></script>
     </body>
 </html>
