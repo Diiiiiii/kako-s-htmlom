@@ -686,11 +686,10 @@
                 <label><input type="checkbox" name="newsletter_topic" value="backend"> Backend<label>
                 <label><input type="checkbox" name="newsletter_topic" value="ux-ui-design"> UX/UI Design </label>
                 <label><input type="checkbox" name="newsletter_topic" value="marketing"> Marketing</label>
-        </fieldset>
-        <fieldset>
-                <legend>Email</legend>
-            <label for="email" placeholder="email"></label>
-            <input id="email" type="email" name="email" required>
+                <br><br>
+                
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="Your Email" required><br><br>
             <button type="submit">Sign me up</button>    
         </fieldset>
         
@@ -698,47 +697,42 @@
         <h3>Food order form</h3>
         <form action="">
         
-            <input type="full_name" type="text" name="full_name" placeholder="Ime i prezime kupca" required><br><br>
-            <input type="tel" name="phone" placeholder="Broj telefona kupca" required><br><br>
-            <input type="tel" name="adress" placeholder="Adresa kupca (ulica i kućni broj)" required><br><br>
-            <input type="time" id="delivery_time " name="delivery_time " placeholder="Vrijeme dostave " required><br><br>
-            <select name="order" type="text" id="Jelo" placeholder="Jelo"  required><br><br>
-            <option value="jelo" disabled selected>Jelo</option>
-             <option value="janjetina">Janjetina</option>
-             <option value="Govedina na lešo">Govedina na lešo</option>
-             <option value="Teletina">Teletina</option>
-             <option value="Sojin odrezak">Sojin odrezak</option>
-            </select><br><br>
-            <input list="order_extras" type="text" placeholder="Dodatni prilozi">
-            <datalist id = "order_extras" >
-                <option>Rajčica</option>
-                <option>Zelena salata</option>
-                <option>Kukruz</option>
-                <option>Feferon</option>
-                <option>Mrkva</option>
-            </datalist><br><br>
-            <p>Izbor beskontaktnog oblika dostave:</p>
-            <lable><input type="radio" name="contactless_delivery" value="true">Da</lable>
-            <lable><input type="radio" name="contactless_delivery" value="fals">Ne</lable><br><br>
+                <lable>Ime i prezime kupca:<input type="text" id="full_name" name="full_name" placeholder="Ivan Ivić" required></lable><br><br>
+                <label>Broj telefona: <input type="tel" id="phone" name="phone" placeholder="090 765345" required></label><br><br>
+                <label>Adresa (ulica i kućni broj): <input type="text" name="address" id="address" placeholder="Ivanovićeva 10" required></label><br><br>
+                <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time"  required></label><br><br>
+                
+                <label>Jelo <input list ="food-recommendation-list" type="text"></label><br>
+                <datalist id="food-recommendation-list" >
+                    <option value="Classic Hamburger">100% mljevena junetina, salata</option>
+                    <option value="Wrap">Wrap</option>
+                    <option value="Čokolino">Čokolino</option>
+                    <option value="Ćevapi">Ćevapi</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Ćevapčići">Ćevapčići</option>
+                    <option value="Zagrebački odrezak">Zagrebački odrezak</option>
+                    <option value="Palenta">Palenta</option>
+                </datalist></label><br>
+                
+                <label>Dodatni prilozi:</label>
+                <label><input type="checkbox" name="order_extras" value="kecap"> Kečap</label>
+                <label><input type="checkbox" name="order_extras" value="majoneza"> Majoneza</label>
+                <label><input type="checkbox" name="order_extras" value="tartar"> Tartar</label>
+                <label><input type="checkbox" name="order_extras" value="kajmak"> Kajmak</label>
+                <label><input type="checkbox" name="order_extras" value="ajvar"> Ajvar</label><br><br>
+                
+                <label>Izbor beskontaktnog oblika dostave:</label>
+                <lable><input type="radio" name="contactless_delivery" value="true" required>Da</lable>
+                <lable><input type="radio" name="contactless_delivery" value="fals">Ne</lable><br><br>
+                
+                <lable>Komentar</lable>
+                <textarea id="comment " name="comment " maxlength="250" rows="5" cols="33" placeholder="maksimalno 250 znakova"></textarea><br><br>
+                <button type="submit">Submit order</button>
+            </form>
+            <br>
+            <a href = "#">back to top</a>
             
-
-            <textarea id="comment " name="comment " maxlength="250"
-          rows="5" cols="33" placeholder="maksimalno 250 znakova">Komentar
-            </textarea><br><br>
-
-            <input list ="food-recommendation-list" type="text" >
-            <button>Submit order</button>
-            <datalist id="food-recommendation-list" >
-                <option value="Classic Hamburger">100% mljevena junetina, salata</option>
-                <option>Wrap</option>
-                <option>Čokolino</option>
-                <option>Ćevapi</option>
-                <option>Pizza</option>
-                <option>Ćevapčići</option>
-                <option>Zagrebački odrezak</option>
-                <option>Palenta</option>
-            </datalist>
-        </form>
+        
         <h2>Sematic Html</h2>
         <a href="cookbook-example/apple-pie.html">Apple pie</a>
         <!--Zadatak-->
