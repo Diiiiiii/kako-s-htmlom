@@ -698,17 +698,22 @@
         <h3>Food order form</h3>
         <form action="">
         
-            <input type="full_name" type="text" name="full_name" placeholder="Ime i prezime kupca" required><br><br>
-            <input type="tel" name="phone" placeholder="Broj telefona kupca" required><br><br>
-            <input type="tel" name="adress" placeholder="Adresa kupca (ulica i kućni broj)" required><br><br>
-            <input type="time" id="delivery_time " name="delivery_time " placeholder="Vrijeme dostave " required><br><br>
-            <select name="order" type="text" id="Jelo" placeholder="Jelo"  required><br><br>
-            <option value="jelo" disabled selected>Jelo</option>
-             <option value="janjetina">Janjetina</option>
-             <option value="Govedina na lešo">Govedina na lešo</option>
-             <option value="Teletina">Teletina</option>
-             <option value="Sojin odrezak">Sojin odrezak</option>
-            </select><br><br>
+            <lable>Ime i prezime kupca:<input type="text" id="full_name" name="full_name" placeholder="Ivan Ivić" required></lable><br><br>
+            <label>Broj telefona: <input type="tel" id="phone" name="phone" placeholder="090 765345" required></label><br><br>
+            <label>Adresa (ulica i kućni broj): <input type="text" name="address" id="address" placeholder="Ivanovićeva 10" required></label><br><br>
+            <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time"  required></label><br><br>
+            <label>Jelo <input list ="food-recommendation-list" type="text"></label><br>
+                <datalist id="food-recommendation-list" >
+                    <option value="Classic Hamburger">100% mljevena junetina, salata</option>
+                    <option value="Wrap">Wrap</option>
+                    <option value="Čokolino">Čokolino</option>
+                    <option value="Ćevapi">Ćevapi</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Ćevapčići">Ćevapčići</option>
+                    <option value="Zagrebački odrezak">Zagrebački odrezak</option>
+                    <option value="Palenta">Palenta</option>
+                </datalist></label><br><br>
+                <label>Dodatni prilozi</label>
             <input list="order_extras" type="text" placeholder="Dodatni prilozi">
             <datalist id = "order_extras" >
                 <option>Rajčica</option>
