@@ -20,4 +20,8 @@ background-color: transparent;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-}  
+}
+code {
+    background-color: rgba(240, 239, 228, 0.993);
+    
+}

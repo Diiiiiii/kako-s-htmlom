@@ -13,24 +13,27 @@
         <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="wrapper">
-        <h1 id ="hyperlinks">Hyperlinks</h1>
-            <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
-            <p>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax:</p>
-            <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code> <br>
-            <p>The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which indicates the link's destination.
-                <br>
-                The link text is the part that will be visible to the reader.
-                <br>
-                Clicking on the link text, will send the reader to the specified URL address.</p>
-            <p>Examples:</p>
-             <pre>
-<code>&lt;a href="#glavni_naslov"&gt;This is my frontend cheat sheet!&lt;/a&gt;</code><br>
-<code>Visit my &lt;a href="https://github.com/Diiiiiii" target="_blank">GitHub profile&lt;/a&gt;</code><br> 
-<code>Get in touch, &lt;a href="mailto:dijanaduran@gmail.com"&gt; send a message&lt;/a&gt;</code><br>
-<code>&lt;a href="tel:+0990000000"&gt;Kontakt mobitel&lt;/a&gt;</code>
-                
-             </pre>
+        <header>
+            <ul>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="table.html">Table</a>
+                </li>
+                <li>
+                    <a href="cookbook-example/apple-pie.html">Apple pie</a>
+                </li>
+            </ul>
+        </header>
+        <div class="wrapper">        
+        <h1 id="glavni_naslov">This is my <span>frontend cheat sheet!</span></h1>
+        <p>Visit my <a href="https://github.com/Diiiiiii" target="_blank">GitHub profile</a></p>
+        <p>Get in touch, <a href="mailto:dijanaduran@gmail.com"> send a message</a></p>
+        <p><a href="tel:+0994992272">Mobile Contact</a></p>
+        
+        <h2>Contents</h2>
+        
             <ol>
                 <li><a href="#glavni_naslov">This is my frontend cheat sheet!</a></li> 
                 <li><a href="#html">HTML</a></li>
@@ -42,26 +45,13 @@
                 <li><a href="#svg">SVG i GIF</a></li>
                 <li><a href="#audio">Audio</a></li>
                 <li><a href="#video">Video</a></li>
+                <li><a href="#hyperlinks">Hyperlinks</a></li>
                 <li><a href="#tabele">Tables</a></li>
                 <li><a href="#forms">Forms</a></li>
                 <li><a href="#sematics">Semantics in HTML</a></li>
             </ol>
 
-        <h1 id="glavni_naslov">This is my <span>frontend cheat sheet!</span></h1>
-        <p>Visit my <a href="https://github.com/Diiiiiii" target="_blank">GitHub profile</a></p>
-        <p>Get in touch, <a href="mailto:dijanaduran@gmail.com"> send a message</a></p>
-        <p><a href="tel:+0994992272">Kontakt mobitel</a></p>
-        
-        <h2>Pages</h2>
-
-        <p><a href="./about.html">To About</a></p>
-        <p><a href="./table.html">Table</a></p>
-        <p><a href="cookbook-example/apple-pie.html">Apple Pie</a></p>
-            <ol>
-                <li><a href="#video">Video</a></li>
-            </ol>
-
-        <h1><a href="#html">HTML</a></h1>
+        <h2><a href="#html">About HTML</a></h2>
 
         <ol>
             <li><a href="#struktura">Document structure</a></li>
@@ -115,7 +105,7 @@
         <h2 id="struktura">Basic HTML structure</h2>
 
         <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
-        
+        <div class="code">
         <pre>
             <code class="language-html">
             &lt;!doctype html&gt;
@@ -139,7 +129,7 @@
             &lt;/html&gt;
             </code>  
         </pre>
-
+    </div>
         <h2 id ="druga">Text formatting</h2>
         <p>HTML contains several elements for defining text with a special meaning:
             <ul> 
@@ -156,7 +146,9 @@
             <br>
             
             <p>Examples with and without tags:</p>
+            <div class="code">
             <code>&lt;strong&gt;<strong>This text is bold.</strong>&lt;/strong&gt;</code><br><br>   
+            </div>
             <strong>This text is bold.</strong>
     </p>
             <a href="#">Back to top of page</a>
@@ -168,14 +160,16 @@
                 <code>&lt;h6&gt;</code> defines the least important heading.
 
                 <p>Examples:
-            <pre>
-                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
-                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
-                <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
-                <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
-                <code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>
-                <code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>
-            </pre>
+            <div class="code">
+<pre>
+<code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+<code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+<code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+<code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+<code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>
+<code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>
+</pre>
+            </div>
                 <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
@@ -187,15 +181,16 @@
             <a href="#">Back to top of page</a>
 
             <h3 id="cetvrta">Paragraphs and words</h3>
-                <p>In HTML, each paragraph has to be wrapped in <strong><code>&lt;p&gt;</code></strong> tags.</p>
+                <p>In HTML, each paragraph has to be wrapped in <code>&lt;p&gt;</code> tags.</p>
                 <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
                 <p>The HTML <br> element defines a line break.</p>
                 <p>Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+                
                     <p>This is<br>a paragraph<br>with line breaks.</p>
-
+                <div class="code">
                     <pre>&lt;p&gt;This is a paragraph without line breaks.&lt;/p&gt; </pre></p>
                 </p>
-
+            </div>
 
                     <a href="#">Back to top of page</a>
 
@@ -222,6 +217,7 @@
             <li>small - this is not important, but nice to have</li>
         </ul>
         <p>Example of code:</p>
+        <div class="code">
         <code>
         <pre>
         &lt;ul&gt;
@@ -231,6 +227,7 @@
         &lt;/ul&gt;
         </pre>
         </code>
+    </div>
         <br>
         <a href="#">Back to top of page</a>
     <br>
@@ -244,6 +241,7 @@
         </ol>
 
         <p>Example of code:</p>
+        <div class="code">
         <code>
         <pre>
         &lt;ol&gt;
@@ -253,6 +251,7 @@
         &lt;/ol&gt;
         </pre>
         </code>
+    </div>
         
         <a href="#">Back to top of page</a>
 <br>
@@ -268,6 +267,7 @@
         </dl>
 
         <p>Example of code:</p>
+        <div class="code">
         <code>
             <pre>
                 &lt;dl&gt;
@@ -280,6 +280,7 @@
                 &lt;/dl&gt;  
             </pre>
         </code>
+        </div>
         <a href="#">Back to top of page</a>
         <br>
         
@@ -288,6 +289,7 @@
             <li>They are grouped by function to help you find what you have in mind easily.</li>
             <li>An alphabetical list of all elements is provided in the sidebar on every element's page as well as this one.</li>
         </ul>
+        <div class="code">
         <ol>
             <pre>
             <li>&lt;!DOCTYPE html&gt;</li>
@@ -301,6 +303,7 @@
             <li>&lt;p&gt;&lt;/p&gt;</li>
             </pre>
         </ol>
+        </div>
         <dl>
             <dt>HTML</dt>
             <dd>(HyperText Markup Language) is a descriptive language that specifies webpage structure.</dd>
@@ -335,7 +338,7 @@
         <p>Example Image code:</p>
             <ul>
                 <li>Absolute URL - Links to an external image that is hosted on another website.<br>Example: <code>&lt;img src="https://www.kindpng.com/picc/m/9-93777_cartoon-books-on-bookshelf-hd-png-download.png" alt="Polica s knjigama" height="300" width="400"&gt;</code></li>
-                <li>Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page.<br>Example: <code>&lt;img src="./images/html.svg" alt="Html" height="100"&gt;</code></li>
+                <li>Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page.<br>Example:<div class="code"> <code>&lt;img src="./images/html.svg" alt="Html" height="100"&gt;</code></div></li>
 
             </ul>
 
@@ -346,9 +349,10 @@
         <p>Based on an XML syntax, SVG can be styled with CSS and made interactive using JavaScript. HTML5 now allows direct embedding of SVG tags in an HTML document.</p>
         <p>As a vector image format, SVG graphics can scale infinitely, making them invaluable in responsive design, since you can create interface elements and graphics that scale to any screen size. SVG also provides a useful set of tools, such as clipping, masking, filters, and animations.</p>
         <p>Example of code:</p>
-        <code>&lt;svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg"&gt;
+        <div class="code"><code>&lt;svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg"&gt;
             &lt;rect width="50%" height="50%" fill="#87CEFA"&gt;&lt;/rect&gt;
             &lt;/svg&gt;</code>
+        </div>
             <br><br>
         <svg width="150" height="150" viewBox="0 0 300 300" fill="none" xmlns="http:/www.w3.org/2000/svg">
             <rect width="50%" height="50%" fill="#87CEFA"></rect>
@@ -362,7 +366,7 @@
             </ul>
             <br>
             <p>Example of code:</p> 
-            <code>&lt;img src="./images/moja-animacija.gif" alt= cekanje&gt;</code>
+            <div class="code"><code>&lt;img src="./images/moja-animacija.gif" alt= cekanje&gt;</code></div>
         </p>
        
        <!-- <h3 id= vjezbanje2>Vježbe  GIF i SVG</h3> -->
@@ -385,11 +389,12 @@
 
         <h2 id = "audio" >Audio</h2>
         <p>The <code>&lt;audio&gt;</code> element works just like the <code>&lt;video&gt;</code> element, with a few small differences as outlined below. A typical example might look like so:</p>
-        
+        <div class="code">
         <code>&lt;audio controls&gt;<br>
             &lt;source src="./music.wav"&gt;<br>
             &lt;p&gt;Your browser does not support this format&lt;/p&gt;
         <br>&lt;/audio&gt;</code>
+        </div>
             <br><br>
             <audio controls>
             <source src="./music.wav">
@@ -398,11 +403,13 @@
         <a href="#">Back to top of page</a>
         <h2 id="video">Video</h2>
         <p>The <code>&lt;video&gt;</code> element allows you to embed a video very easily. A really simple example looks like this:</p>
+        <div class="code">
         <code>
             &lt;video width="600" controls&gt;<br>
                 &ltsource src="./mountains.webm"&gt;<br>
             &lt;/video&gt; <br>
         </code>
+        </div>
         <br>
         <p>The embedded video will look something like this:</p>
         <video width="600" controls>
@@ -414,6 +421,30 @@
         <div><iframe width="600" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/136863097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paradise-of-bachelors" title="Paradise of Bachelors" target="_blank" style="color: #cccccc; text-decoration: none;">Paradise of Bachelors</a> · <a href="https://soundcloud.com/paradise-of-bachelors/ive-got-mine" title="Mike Cooper - Trout Steel (PoB-13, 1970/2014): &quot;I&#x27;ve Got Mine&quot;" target="_blank" style="color: #cccccc; text-decoration: none;">Mike Cooper - Trout Steel (PoB-13, 1970/2014): &quot;I&#x27;ve Got Mine&quot;</a></div>
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/3059653&color=%23c5edd3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paradise-of-bachelors" title="Paradise of Bachelors" target="_blank" style="color: #cccccc; text-decoration: none;">Paradise of Bachelors</a> · <a href="https://soundcloud.com/paradise-of-bachelors/sets/playlist-1" title="Paradisiacal Playlist" target="_blank" style="color: #cccccc; text-decoration: none;">Paradisiacal Playlist</a></div>
         <a href="#">Back to top of page</a>
+        <h2 id ="hyperlinks">Hyperlinks</h2>
+            <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+            
+            <p>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax:</p>
+            <div class="code">
+            <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+            </div>
+             <br>
+            <p>The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which indicates the link's destination.
+                <br>
+                The link text is the part that will be visible to the reader.
+                <br>
+                Clicking on the link text, will send the reader to the specified URL address.</p>
+            <p>Examples:</p>
+            <div class ="code">
+             <pre>
+<code>&lt;a href="#glavni_naslov"&gt;This is my frontend cheat sheet!&lt;/a&gt;</code><br>
+<code>Visit my &lt;a href="https://github.com/Diiiiiii" target="_blank">GitHub profile&lt;/a&gt;</code><br> 
+<code>Get in touch, &lt;a href="mailto:dijanaduran@gmail.com"&gt; send a message&lt;/a&gt;</code><br>
+<code>&lt;a href="tel:+0990000000"&gt;Mobile contact&lt;/a&gt;</code>
+                
+             </pre>
+             </div>
+             <a href="#">Back to top of page</a>
         <h2 id="tabele">Tables</h2>
         <table border="1">
             <thead>
